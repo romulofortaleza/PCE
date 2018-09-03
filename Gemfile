@@ -5,8 +5,12 @@ gem 'rails'
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
 
+<<<<<<< HEAD
 # Pesquisas dentro do Postgresql
 gem 'pg_search'
+=======
+gem 'devise'
+>>>>>>> Devise
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'

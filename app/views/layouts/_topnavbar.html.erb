@@ -1,18 +1,19 @@
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" src="assets/stylesheets/base/navigation.scss" />
+
 <div class="row border-bottom">
-    <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+    <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0; background: linear-gradient(#ffffff, #31797c 25%)">
         <div class="navbar-header">
             <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
-            <form role="search" class="navbar-form-custom" method="post" action="/">
-                <div class="form-group">
-                    <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search" />
-                </div>
-            </form>
-        </div>
-        <ul class="nav navbar-top-links navbar-right">
-            <li>
-                <a href="#">
-                    <i class="fa fa-sign-out"></i> Log out
-                </a>
+          </div>
+          <ul class="nav navbar-top-links" style="text-align: center;">
+        <li>
+          <%= link_to('Processo Convênio Eletrônico - PCE', home_index_path, :style => "color: #ffff; font-size: 18px; margin: -5px; margin-left: 50px; margin-top: 2px; font-family: Poppins-Medium;" )%>
+        </li>
+        <li class="pull-right" >
+          <% if user_signed_in? %>
+              <%= link_to fa_icon("sign-out", text:"SAIR"), destroy_user_session_path, method: :delete, :class => "", :style => "color: #ffff; margin-top: 4px;" %></li>
+          <% end %>
             </li>
         </ul>
     </nav>

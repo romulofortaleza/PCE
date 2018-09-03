@@ -11,5 +11,8 @@
  *= require_self
  *= require font-awesome
  *= require animate/animate.css
+ *= require css-hamburgers/hamburgers.min.css
+ *= require main.css
+ *= require util.css
  *= require style
  */
