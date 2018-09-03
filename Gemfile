@@ -5,6 +5,9 @@ gem 'rails'
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
 
+# Pesquisas dentro do Postgresql
+gem 'pg_search'
+
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
@@ -29,6 +32,10 @@ gem 'jbuilder', '~> 2.5'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
+end
+
+group :development do
+  gem 'pg'
 end
 
 # Use ActiveModel has_secure_password

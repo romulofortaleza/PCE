@@ -2682,3 +2682,292 @@ rack (2.0.4) lib/rack/handler/webrick.rb:86:in `service'
 /home/ramf/.rvm/rubies/ruby-2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
 /home/ramf/.rvm/rubies/ruby-2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
 /home/ramf/.rvm/rubies/ruby-2.4.4/lib/ruby/2.4.0/webrick/server.rb:308:in `block in start_thread'
+Started GET "/" for 127.0.0.1 at 2018-08-30 03:28:10 -0300
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from instance_eval at /home/ramf/.rvm/gems/ruby-2.4.4/gems/activesupport-5.2.1/lib/active_support/lazy_load_hooks.rb:71)
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3698ms (Views: 3694.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-4bf1fa33e4f6d84e753e219ca204e17adf4978dbb64806603c8933bf6a14c50a.css?body=1" for 127.0.0.1 at 2018-08-30 03:28:13 -0300
+Started GET "/assets/rails-ujs.self-3b600681e552d8090230990c0a2e8537aff48159bea540d275a620d272ba33a0.js?body=1" for 127.0.0.1 at 2018-08-30 03:28:13 -0300
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 127.0.0.1 at 2018-08-30 03:28:13 -0300
+Started GET "/assets/inspinia.self-0105b2740ac6f751553fae37cd22fd48eee7a5092c5c29e32b685e736a59e704.js?body=1" for 127.0.0.1 at 2018-08-30 03:28:13 -0300
+Started GET "/assets/application.self-cdb0ad458c65589c083cfb45a0d0ad897390667ab103d12f6f09848135ace311.js?body=1" for 127.0.0.1 at 2018-08-30 03:28:13 -0300
+Started GET "/" for 127.0.0.1 at 2018-08-30 03:28:29 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 33ms (Views: 32.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-30 03:28:31 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 50ms (Views: 49.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-30 03:28:32 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 44ms (Views: 43.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-30 03:28:32 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 43ms (Views: 41.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-30 03:28:33 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 44ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-30 03:28:33 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 45ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-30 03:28:33 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 40ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-30 03:28:33 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 35ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-30 03:28:33 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-30 03:28:34 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 33ms (Views: 32.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/minor" for 127.0.0.1 at 2018-08-30 03:28:34 -0300
+Processing by HomeController#minor as HTML
+  Rendering home/minor.html.erb within layouts/application
+  Rendered home/minor.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_topnavbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 44ms (Views: 42.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/minor" for 127.0.0.1 at 2018-08-30 03:28:35 -0300
+Processing by HomeController#minor as HTML
+  Rendering home/minor.html.erb within layouts/application
+  Rendered home/minor.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 36ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/minor" for 127.0.0.1 at 2018-08-30 03:28:35 -0300
+Processing by HomeController#minor as HTML
+  Rendering home/minor.html.erb within layouts/application
+  Rendered home/minor.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 35ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/minor" for 127.0.0.1 at 2018-08-30 03:28:35 -0300
+Processing by HomeController#minor as HTML
+  Rendering home/minor.html.erb within layouts/application
+  Rendered home/minor.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 39ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/minor" for 127.0.0.1 at 2018-08-30 03:28:39 -0300
+Processing by HomeController#minor as HTML
+  Rendering home/minor.html.erb within layouts/application
+  Rendered home/minor.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_topnavbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 43ms (Views: 42.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/minor" for 127.0.0.1 at 2018-08-30 03:28:40 -0300
+Processing by HomeController#minor as HTML
+  Rendering home/minor.html.erb within layouts/application
+  Rendered home/minor.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 48ms (Views: 47.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/minor" for 127.0.0.1 at 2018-08-30 03:28:40 -0300
+Processing by HomeController#minor as HTML
+  Rendering home/minor.html.erb within layouts/application
+  Rendered home/minor.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 33ms (Views: 32.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/minor" for 127.0.0.1 at 2018-08-30 03:28:41 -0300
+Processing by HomeController#minor as HTML
+  Rendering home/minor.html.erb within layouts/application
+  Rendered home/minor.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 84ms (Views: 82.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/minor" for 127.0.0.1 at 2018-08-30 03:28:42 -0300
+Processing by HomeController#minor as HTML
+  Rendering home/minor.html.erb within layouts/application
+  Rendered home/minor.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 50ms (Views: 48.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/minor" for 127.0.0.1 at 2018-08-30 03:28:43 -0300
+Processing by HomeController#minor as HTML
+  Rendering home/minor.html.erb within layouts/application
+  Rendered home/minor.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 29ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/minor" for 127.0.0.1 at 2018-08-30 03:28:43 -0300
+Processing by HomeController#minor as HTML
+  Rendering home/minor.html.erb within layouts/application
+  Rendered home/minor.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/minor" for 127.0.0.1 at 2018-08-30 03:28:44 -0300
+Processing by HomeController#minor as HTML
+  Rendering home/minor.html.erb within layouts/application
+  Rendered home/minor.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_topnavbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 50ms (Views: 48.6ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE "pce_development" ENCODING = 'unicode'[0m
+Started GET "/" for 127.0.0.1 at 2018-09-03 00:04:46 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_topnavbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 302ms (Views: 298.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0778144d1b49e448b7ba31664788157f0e9c7b6aea5563fbe16beeb155d37e17.css?body=1" for 127.0.0.1 at 2018-09-03 00:04:46 -0300
+Started GET "/assets/font-awesome.self-2a86d2017f4b74f22943750b3b50b9cb753581bab96cbdaaf2df53f4c04c995b.css?body=1" for 127.0.0.1 at 2018-09-03 00:04:46 -0300
+Started GET "/assets/rails-ujs.self-3b600681e552d8090230990c0a2e8537aff48159bea540d275a620d272ba33a0.js?body=1" for 127.0.0.1 at 2018-09-03 00:04:46 -0300
+Started GET "/assets/jquery/jquery-3.1.1.min.self-9347a28e490a684188bc8e7748f6f086a53a87088854ac4de47095f42a085b5b.js?body=1" for 127.0.0.1 at 2018-09-03 00:04:46 -0300
+Started GET "/assets/style.self-4bf1fa33e4f6d84e753e219ca204e17adf4978dbb64806603c8933bf6a14c50a.css?body=1" for 127.0.0.1 at 2018-09-03 00:04:46 -0300
+Started GET "/assets/animate/animate.self-570992b3ad6a262de1924aa4ecc17a6f9cf45cb8fd0daaf3cfe5a9f2f3e08e2e.css?body=1" for 127.0.0.1 at 2018-09-03 00:04:46 -0300
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for 127.0.0.1 at 2018-09-03 00:04:46 -0300
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for 127.0.0.1 at 2018-09-03 00:04:46 -0300
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for 127.0.0.1 at 2018-09-03 00:04:46 -0300
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for 127.0.0.1 at 2018-09-03 00:04:46 -0300
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for 127.0.0.1 at 2018-09-03 00:04:46 -0300
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for 127.0.0.1 at 2018-09-03 00:04:46 -0300
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for 127.0.0.1 at 2018-09-03 00:04:46 -0300
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for 127.0.0.1 at 2018-09-03 00:04:46 -0300
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for 127.0.0.1 at 2018-09-03 00:04:46 -0300
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for 127.0.0.1 at 2018-09-03 00:04:46 -0300
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for 127.0.0.1 at 2018-09-03 00:04:46 -0300
+Started GET "/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1" for 127.0.0.1 at 2018-09-03 00:04:46 -0300
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2018-09-03 00:04:46 -0300
+Started GET "/assets/metisMenu/jquery.metisMenu.self-587029531d977fc7fa10623dd670189a298bd606124c23fc2edd051da5b0c914.js?body=1" for 127.0.0.1 at 2018-09-03 00:04:46 -0300
+Started GET "/assets/pace/pace.min.self-9bf6d667514a59744d5db2c9392aaf5595dec9c131a425ababa1cb8cddb814f2.js?body=1" for 127.0.0.1 at 2018-09-03 00:04:46 -0300
+Started GET "/assets/footable/footable.all.min.self-f2a932ba63694dabf241bd470298537366b4a1adc1e339d9ac2613033d98ecbc.js?body=1" for 127.0.0.1 at 2018-09-03 00:04:46 -0300
+Started GET "/assets/dataTables/datatables.min.self-b780cdd949f17bced4cdd9bc615568c5ee0eff74e024c214b12a216ef5064d3c.js?body=1" for 127.0.0.1 at 2018-09-03 00:04:46 -0300
+Started GET "/assets/slimscroll/jquery.slimscroll.min.self-a2008e2992d055fbe5108d326a54c3083f843da1a30240d2b2e1f706716fa03e.js?body=1" for 127.0.0.1 at 2018-09-03 00:04:47 -0300
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 127.0.0.1 at 2018-09-03 00:04:47 -0300
+Started GET "/assets/inspinia.self-0105b2740ac6f751553fae37cd22fd48eee7a5092c5c29e32b685e736a59e704.js?body=1" for 127.0.0.1 at 2018-09-03 00:04:47 -0300
+Started GET "/assets/application.self-cdb0ad458c65589c083cfb45a0d0ad897390667ab103d12f6f09848135ace311.js?body=1" for 127.0.0.1 at 2018-09-03 00:04:47 -0300
+Started GET "/assets/patterns/header-profile-c05909898218a521d3bd19ba09a9a43338de6de5fdf1d3fc771b0ec28ae416c5.png" for 127.0.0.1 at 2018-09-03 00:04:47 -0300
+Started GET "/assets/fontawesome-webfont-2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe.woff2" for 127.0.0.1 at 2018-09-03 00:04:47 -0300
