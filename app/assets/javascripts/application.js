@@ -11,6 +11,7 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require rails-ujs
+//= require popper
 //= require jquery/jquery-3.1.1.min.js
 //= require bootstrap-sprockets
 //= require metisMenu/jquery.metisMenu.js

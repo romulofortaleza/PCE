@@ -27,6 +27,8 @@
 default: &default
  adapter: postgresql
  encoding: unicode
+ host: localhost
+ pool: 5
  username: ramf
  password: ramfbr08
 development:
