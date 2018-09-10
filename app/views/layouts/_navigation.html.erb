@@ -15,18 +15,13 @@
         <div class="logo-element">
           <%= "PCE" %>
         </div>
-      </li>
-            <li class="<%= 'active' if current_page?('/') %>">
-                <%= link_to "/" do %>
-                <i class="fa fa-laptop"></i> <span class="nav-label">Main page</span>
-                <% end %>
-            </li>
-            <li class="<%= 'active' if current_page?('/home/minor') %>">
-                <%= link_to "/home/minor" do %>
-                <i class="fa fa-desktop"></i> <span class="nav-label">Minor page</span>
-                <% end %>
-            </li>
-        </ul>
-
+      </li>           
+        <li>
+          <a href="/"><i class="fa fa-book"></i> <span class="nav-label">Cadastro de Instrumento</span> <span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level collapse">
+                <li><a href="index.html"><i class="fa fa-file"></i> Novo Instrumento</a></li>               
+            </ul>
+        </li>
     </div>
+  </ul>
 </nav>
