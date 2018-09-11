@@ -35935,3 +35935,595 @@ Completed 200 OK in 51ms (Views: 49.0ms | ActiveRecord: 0.4ms)
 
 
 Started GET "/assets/pce-peq-f554f9a3ce95932711e04a1dd0e6d68e072e88fcc50f308b2c0201e628969f5e.png" for 127.0.0.1 at 2018-09-11 13:43:30 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7417991111663942355)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateInstrumentRegistrations (20180911183800)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "instrument_registrations" ("id" bigserial primary key, "instrument_number" integer, "internal_number" integer, "extra_number" integer, "object_agreement" character varying, "granting_organ" character varying, "linked_organ" character varying, "existence_im" character varying, "instituition_name" character varying, "value_transfer" integer, "counterpart_value" integer, "total" integer, "signature_date" date, "end_date" date, "suspensive_date" date, "type" character varying, "address" character varying, "open_date" date, "organ" character varying, "user" character varying, "signature" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7417991111663942355)[0m
+Started GET "/" for 127.0.0.1 at 2018-09-11 15:38:29 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.1) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.0.5) lib/rack/handler/webrick.rb:86:in `service'
+/usr/share/rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+/usr/share/rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+/usr/share/rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7417991111663942355)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateInstrumentRegistrations (20180911183800)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "instrument_registrations" ("id" bigserial primary key, "instrument_number" integer, "internal_number" integer, "extra_number" integer, "object_agreement" character varying, "granting_organ" character varying, "linked_organ" character varying, "existence_im" character varying, "instituition_name" character varying, "value_transfer" integer, "counterpart_value" integer, "total" integer, "signature_date" date, "end_date" date, "suspensive_date" date, "type" character varying, "address" character varying, "open_date" date, "organ" character varying, "user" character varying, "signature" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7417991111663942355)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (108.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "pce_development"[0m
+  [1m[35m (253.9ms)[0m  [1m[35mCREATE DATABASE "pce_development" ENCODING = 'unicode'[0m
+  [1m[35m (8.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7417991111663942355)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20180903114430)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180903114430"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateInstrumentRegistrations (20180911183800)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE TABLE "instrument_registrations" ("id" bigserial primary key, "instrument_number" integer, "internal_number" integer, "extra_number" integer, "object_agreement" character varying, "granting_organ" character varying, "linked_organ" character varying, "existence_im" character varying, "instituition_name" character varying, "value_transfer" integer, "counterpart_value" integer, "total" integer, "signature_date" date, "end_date" date, "suspensive_date" date, "type" character varying, "address" character varying, "open_date" date, "organ" character varying, "user" character varying, "signature" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180911183800"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-09-11 18:40:29.388812"], ["updated_at", "2018-09-11 18:40:29.388812"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7417991111663942355)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2018-09-11 15:40:51 -0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 401 Unauthorized in 15ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-09-11 15:40:51 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/login
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/login (9.6ms)
+Completed 200 OK in 564ms (Views: 556.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/instrument_registrations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2018-09-11 15:40:51 -0300
+Started GET "/assets/application.self-85e9c55883eae54677d5e4ca5b87165d23f9c6d9668f21c142dfe5f657e7480f.css?body=1" for 127.0.0.1 at 2018-09-11 15:40:51 -0300
+Started GET "/assets/bootstrap/popover.self-ca78ba0a35d9471f5df51b8fafb26912ce912d4c04351c6efbad984c32c3e3cb.js?body=1" for 127.0.0.1 at 2018-09-11 15:40:51 -0300
+Started GET "/users/vendor/tilt/tilt.jquery.min.js" for 127.0.0.1 at 2018-09-11 15:40:51 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/vendor/tilt/tilt.jquery.min.js"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.0.5) lib/rack/handler/webrick.rb:86:in `service'
+/usr/share/rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+/usr/share/rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+/usr/share/rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-09-11 15:40:56 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WR/5jo1tUup8JWQnaZIHtLJlGJJviKJqtExo68djGLUaP7dQWF2chvcvD8yoam2cjr/V0FrObKuYvETdoUHoJw==", "user"=>{"email"=>"romulofortaleza@pce.com.br", "password"=>"[FILTERED]"}, "commit"=>"Entrar"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "romulofortaleza@pce.com.br"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.6ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WR/5jo1tUup8JWQnaZIHtLJlGJJviKJqtExo68djGLUaP7dQWF2chvcvD8yoam2cjr/V0FrObKuYvETdoUHoJw==", "user"=>{"email"=>"romulofortaleza@pce.com.br", "password"=>"[FILTERED]"}, "commit"=>"Entrar"}
+  Rendering devise/sessions/new.html.erb within layouts/login
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/login (3.5ms)
+Completed 200 OK in 200ms (Views: 55.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/vendor/tilt/tilt.jquery.min.js" for 127.0.0.1 at 2018-09-11 15:40:56 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/vendor/tilt/tilt.jquery.min.js"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.0.5) lib/rack/handler/webrick.rb:86:in `service'
+/usr/share/rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+/usr/share/rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+/usr/share/rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "romulofortaleza@pce.com.br"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Rômulo"], ["email", "romulofortaleza@pce.com.br"], ["encrypted_password", "$2a$11$FBgNqtA99mE1vBcnXYsK3Ogs04K3h47/6FBVF6RKg1.7Ws.WbTkNG"], ["created_at", "2018-09-11 18:41:05.545839"], ["updated_at", "2018-09-11 18:41:05.545839"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-09-11 15:41:11 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WR/5jo1tUup8JWQnaZIHtLJlGJJviKJqtExo68djGLUaP7dQWF2chvcvD8yoam2cjr/V0FrObKuYvETdoUHoJw==", "user"=>{"email"=>"romulofortaleza@pce.com.br", "password"=>"[FILTERED]"}, "commit"=>"Entrar"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "romulofortaleza@pce.com.br"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 172ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-11 15:41:11 -0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_topnavbar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 271ms (Views: 268.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/font-awesome.self-2a86d2017f4b74f22943750b3b50b9cb753581bab96cbdaaf2df53f4c04c995b.css?body=1" for 127.0.0.1 at 2018-09-11 15:41:12 -0300
+Started GET "/assets/application.self-85e9c55883eae54677d5e4ca5b87165d23f9c6d9668f21c142dfe5f657e7480f.css?body=1" for 127.0.0.1 at 2018-09-11 15:41:12 -0300
+Started GET "/assets/animate/animate.self-570992b3ad6a262de1924aa4ecc17a6f9cf45cb8fd0daaf3cfe5a9f2f3e08e2e.css?body=1" for 127.0.0.1 at 2018-09-11 15:41:12 -0300
+Started GET "/assets/util.self-058acc63df74deca8f02557040aefca291a8a2a414f06aec1db224827c3a50c8.css?body=1" for 127.0.0.1 at 2018-09-11 15:41:12 -0300
+Started GET "/assets/style.self-af5b8d26fbde9fe3393b312787e05e30ffbd326094c5beb2db08e440642f882b.css?body=1" for 127.0.0.1 at 2018-09-11 15:41:12 -0300
+Started GET "/assets/rails-ujs.self-3b600681e552d8090230990c0a2e8537aff48159bea540d275a620d272ba33a0.js?body=1" for 127.0.0.1 at 2018-09-11 15:41:12 -0300
+Started GET "/assets/main.self-f5a7cdf8f68947ff64d294eef540edb6f44c48df63b521148fb3e1872911d484.css?body=1" for 127.0.0.1 at 2018-09-11 15:41:12 -0300
+Started GET "/assets/css-hamburgers/hamburgers.min.self-b3bfa2977fd7b52c934dad97e466658223fa6c4283413a19b70d5be4cd910b09.css?body=1" for 127.0.0.1 at 2018-09-11 15:41:12 -0300
+Started GET "/assets/popper.self-23d0e4674571ef619dc97acba7169155cec531ebea3136429568f24ab0755da7.js?body=1" for 127.0.0.1 at 2018-09-11 15:41:12 -0300
+Started GET "/assets/jquery/jquery-3.1.1.min.self-9347a28e490a684188bc8e7748f6f086a53a87088854ac4de47095f42a085b5b.js?body=1" for 127.0.0.1 at 2018-09-11 15:41:12 -0300
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for 127.0.0.1 at 2018-09-11 15:41:12 -0300
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for 127.0.0.1 at 2018-09-11 15:41:12 -0300
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for 127.0.0.1 at 2018-09-11 15:41:12 -0300
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for 127.0.0.1 at 2018-09-11 15:41:12 -0300
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for 127.0.0.1 at 2018-09-11 15:41:12 -0300
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for 127.0.0.1 at 2018-09-11 15:41:12 -0300
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for 127.0.0.1 at 2018-09-11 15:41:12 -0300
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for 127.0.0.1 at 2018-09-11 15:41:12 -0300
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for 127.0.0.1 at 2018-09-11 15:41:12 -0300
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for 127.0.0.1 at 2018-09-11 15:41:12 -0300
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for 127.0.0.1 at 2018-09-11 15:41:12 -0300
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2018-09-11 15:41:12 -0300
+Started GET "/assets/metisMenu/jquery.metisMenu.self-587029531d977fc7fa10623dd670189a298bd606124c23fc2edd051da5b0c914.js?body=1" for 127.0.0.1 at 2018-09-11 15:41:12 -0300
+Started GET "/assets/bootstrap/popover.self-ca78ba0a35d9471f5df51b8fafb26912ce912d4c04351c6efbad984c32c3e3cb.js?body=1" for 127.0.0.1 at 2018-09-11 15:41:12 -0300
+Started GET "/assets/pace/pace.min.self-9bf6d667514a59744d5db2c9392aaf5595dec9c131a425ababa1cb8cddb814f2.js?body=1" for 127.0.0.1 at 2018-09-11 15:41:12 -0300
+Started GET "/assets/slimscroll/jquery.slimscroll.min.self-a2008e2992d055fbe5108d326a54c3083f843da1a30240d2b2e1f706716fa03e.js?body=1" for 127.0.0.1 at 2018-09-11 15:41:12 -0300
+Started GET "/assets/select2/select2.min.self-29080377793c2a531be0bad7d46aa3fcf1ede0008ebf68b1e4f97927f368ac38.js?body=1" for 127.0.0.1 at 2018-09-11 15:41:12 -0300
+Started GET "/assets/bootstrap/popper.min.self-f3a69a9249ed65c72f242a892d0c8223c6161d0c96e0ac9ae3e4356f832c6f5d.js?body=1" for 127.0.0.1 at 2018-09-11 15:41:12 -0300
+Started GET "/assets/bootstrap/bootstrap.min.self-d6ce39ce73037670cfc183b1d73195f2b6f23565856af537a53efafedfe45a21.js?body=1" for 127.0.0.1 at 2018-09-11 15:41:12 -0300
+Started GET "/assets/tilt/tilt.jquery.min.self-8c343b24bfa1ada9122d5f5b38bfaa6fbcbf8f075dd751ff9d72c98278b46d9e.js?body=1" for 127.0.0.1 at 2018-09-11 15:41:12 -0300
+Started GET "/assets/main.self-e163c51f810df56a70efa8622c26e00d2479bf6661cfd67bcf488d9722ef6e37.js?body=1" for 127.0.0.1 at 2018-09-11 15:41:12 -0300
+Started GET "/assets/system.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2018-09-11 15:41:12 -0300
+Started GET "/assets/inspinia.self-0105b2740ac6f751553fae37cd22fd48eee7a5092c5c29e32b685e736a59e704.js?body=1" for 127.0.0.1 at 2018-09-11 15:41:12 -0300
+Started GET "/assets/application.self-f68adf6d452730e98bc58cc2e7cf26978b0ce00254413ac4839592ef8f04c7f1.js?body=1" for 127.0.0.1 at 2018-09-11 15:41:12 -0300
+Started GET "/assets/instrument_registrations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2018-09-11 15:41:12 -0300
+Started GET "/assets/pce-peq-f554f9a3ce95932711e04a1dd0e6d68e072e88fcc50f308b2c0201e628969f5e.png" for 127.0.0.1 at 2018-09-11 15:41:12 -0300
+Started GET "/assets/patterns/header-profile-c05909898218a521d3bd19ba09a9a43338de6de5fdf1d3fc771b0ec28ae416c5.png" for 127.0.0.1 at 2018-09-11 15:41:12 -0300
+Started GET "/routes" for 127.0.0.1 at 2018-09-11 15:41:18 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/routes"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.0.5) lib/rack/handler/webrick.rb:86:in `service'
+/usr/share/rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+/usr/share/rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+/usr/share/rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/instrument_registrations" for 127.0.0.1 at 2018-09-11 15:41:29 -0300
+Processing by InstrumentRegistrationsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering instrument_registrations/index.html.erb within layouts/application
+  Rendered instrument_registrations/_header.html.erb (0.8ms)
+  [1m[36mInstrumentRegistration Load (0.5ms)[0m  [1m[34mSELECT "instrument_registrations".* FROM "instrument_registrations"[0m
+  Rendered instrument_registrations/index.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_topnavbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 59ms (Views: 52.1ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/instrument_registrations/new" for 127.0.0.1 at 2018-09-11 15:42:02 -0300
+Processing by InstrumentRegistrationsController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering instrument_registrations/new.html.erb within layouts/application
+  Rendered instrument_registrations/_header.html.erb (0.5ms)
+  Rendered instrument_registrations/_form.html.erb (8.4ms)
+  Rendered instrument_registrations/new.html.erb within layouts/application (10.7ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_topnavbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 85ms (Views: 59.3ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/instrument_registrations" for 127.0.0.1 at 2018-09-11 15:43:28 -0300
+Processing by InstrumentRegistrationsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering instrument_registrations/index.html.erb within layouts/application
+  Rendered instrument_registrations/_header.html.erb (0.6ms)
+  [1m[36mInstrumentRegistration Load (0.6ms)[0m  [1m[34mSELECT "instrument_registrations".* FROM "instrument_registrations"[0m
+  Rendered instrument_registrations/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_topnavbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 59ms (Views: 54.8ms | ActiveRecord: 1.2ms)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (109.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "pce_development"[0m
+  [1m[35m (263.5ms)[0m  [1m[35mCREATE DATABASE "pce_development" ENCODING = 'unicode'[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7417991111663942355)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20180903114430)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180903114430"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-09-11 18:44:45.017088"], ["updated_at", "2018-09-11 18:44:45.017088"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7417991111663942355)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "romulofortaleza@pce.com.br"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Rômulo"], ["email", "romulofortaleza@pce.com.br"], ["encrypted_password", "$2a$11$5LZyQXHrt.SxvanxhfbSLO.SDiRMJNYGZuUFd3BSjPRZTa7ZbBuGm"], ["created_at", "2018-09-11 18:44:51.338414"], ["updated_at", "2018-09-11 18:44:51.338414"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7417991111663942355)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateInstrumentRegistrations (20180911184533)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "instrument_registrations" ("id" bigserial primary key, "instrument_number" integer, "internal_number" integer, "extra_number" integer, "object_agreement" character varying, "granting_organ" character varying, "linked_organ" character varying, "existence_im" character varying, "instituition_name" character varying, "value_transfer" character varying, "counterpart_value" character varying, "total" character varying, "signature_date" date, "end_date" date, "suspensive_date" date, "type" character varying, "address" character varying, "open_date" date, "organ" character varying, "user" character varying, "signature" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180911184533"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7417991111663942355)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/instrument_registrations" for 127.0.0.1 at 2018-09-11 15:46:14 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by InstrumentRegistrationsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 401 Unauthorized in 21ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-09-11 15:46:14 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/login
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/login (8.2ms)
+Completed 200 OK in 267ms (Views: 265.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-85e9c55883eae54677d5e4ca5b87165d23f9c6d9668f21c142dfe5f657e7480f.css?body=1" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+Started GET "/assets/font-awesome.self-2a86d2017f4b74f22943750b3b50b9cb753581bab96cbdaaf2df53f4c04c995b.css?body=1" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+Started GET "/assets/css-hamburgers/hamburgers.min.self-b3bfa2977fd7b52c934dad97e466658223fa6c4283413a19b70d5be4cd910b09.css?body=1" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+Started GET "/assets/util.self-058acc63df74deca8f02557040aefca291a8a2a414f06aec1db224827c3a50c8.css?body=1" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+Started GET "/assets/rails-ujs.self-3b600681e552d8090230990c0a2e8537aff48159bea540d275a620d272ba33a0.js?body=1" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+Started GET "/assets/style.self-af5b8d26fbde9fe3393b312787e05e30ffbd326094c5beb2db08e440642f882b.css?body=1" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+Started GET "/assets/animate/animate.self-570992b3ad6a262de1924aa4ecc17a6f9cf45cb8fd0daaf3cfe5a9f2f3e08e2e.css?body=1" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+Started GET "/assets/popper.self-23d0e4674571ef619dc97acba7169155cec531ebea3136429568f24ab0755da7.js?body=1" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+Started GET "/assets/jquery/jquery-3.1.1.min.self-9347a28e490a684188bc8e7748f6f086a53a87088854ac4de47095f42a085b5b.js?body=1" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+Started GET "/assets/bootstrap/popover.self-ca78ba0a35d9471f5df51b8fafb26912ce912d4c04351c6efbad984c32c3e3cb.js?body=1" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+Started GET "/assets/metisMenu/jquery.metisMenu.self-587029531d977fc7fa10623dd670189a298bd606124c23fc2edd051da5b0c914.js?body=1" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+Started GET "/assets/pace/pace.min.self-9bf6d667514a59744d5db2c9392aaf5595dec9c131a425ababa1cb8cddb814f2.js?body=1" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+Started GET "/assets/slimscroll/jquery.slimscroll.min.self-a2008e2992d055fbe5108d326a54c3083f843da1a30240d2b2e1f706716fa03e.js?body=1" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+Started GET "/assets/bootstrap/bootstrap.min.self-d6ce39ce73037670cfc183b1d73195f2b6f23565856af537a53efafedfe45a21.js?body=1" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+Started GET "/assets/tilt/tilt.jquery.min.self-8c343b24bfa1ada9122d5f5b38bfaa6fbcbf8f075dd751ff9d72c98278b46d9e.js?body=1" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+Started GET "/assets/bootstrap/popper.min.self-f3a69a9249ed65c72f242a892d0c8223c6161d0c96e0ac9ae3e4356f832c6f5d.js?body=1" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+Started GET "/assets/main.self-e163c51f810df56a70efa8622c26e00d2479bf6661cfd67bcf488d9722ef6e37.js?body=1" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+Started GET "/assets/select2/select2.min.self-29080377793c2a531be0bad7d46aa3fcf1ede0008ebf68b1e4f97927f368ac38.js?body=1" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+Started GET "/assets/instrument_registrations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+Started GET "/assets/inspinia.self-0105b2740ac6f751553fae37cd22fd48eee7a5092c5c29e32b685e736a59e704.js?body=1" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+Started GET "/assets/main.self-f5a7cdf8f68947ff64d294eef540edb6f44c48df63b521148fb3e1872911d484.css?body=1" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+Started GET "/assets/application.self-f68adf6d452730e98bc58cc2e7cf26978b0ce00254413ac4839592ef8f04c7f1.js?body=1" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+Started GET "/assets/system.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+Started GET "/users/vendor/tilt/tilt.jquery.min.js" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/vendor/tilt/tilt.jquery.min.js"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.0.5) lib/rack/handler/webrick.rb:86:in `service'
+/usr/share/rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+/usr/share/rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+/usr/share/rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/assets/pcee-e980f7205d8d0c91ab92cf2b0c774bf66d525e59dcf8000da0ea9d3dda8bd82b.png" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+Started GET "/users/vendor/tilt/tilt.jquery.min.js" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/vendor/tilt/tilt.jquery.min.js"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.0.5) lib/rack/handler/webrick.rb:86:in `service'
+/usr/share/rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+/usr/share/rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+/usr/share/rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/fonts/poppins/Poppins-Medium.ttf" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+Started GET "/fonts/montserrat/Montserrat-Bold.ttf" for 127.0.0.1 at 2018-09-11 15:46:15 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/montserrat/Montserrat-Bold.ttf"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.0.5) lib/rack/handler/webrick.rb:86:in `service'
+/usr/share/rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+/usr/share/rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+/usr/share/rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/poppins/Poppins-Medium.ttf"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.0.5) lib/rack/handler/webrick.rb:86:in `service'
+/usr/share/rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+/usr/share/rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+/usr/share/rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-09-11 15:46:20 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BFST6DcI5JzwW7FWUwm5nbnSarFbZIHm5y0ygXN+j4ZLYXLigzrRmwUhYI8zg8RCUpYGLQ2G+VkmXeSWaiT6hw==", "user"=>{"email"=>"romulofortaleza@pce.com.br", "password"=>"[FILTERED]"}, "commit"=>"Entrar"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "romulofortaleza@pce.com.br"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/instrument_registrations
+Completed 302 Found in 155ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/instrument_registrations" for 127.0.0.1 at 2018-09-11 15:46:20 -0300
+Processing by InstrumentRegistrationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering instrument_registrations/index.html.erb within layouts/application
+  Rendered instrument_registrations/_header.html.erb (0.7ms)
+  [1m[36mInstrumentRegistration Load (0.5ms)[0m  [1m[34mSELECT "instrument_registrations".* FROM "instrument_registrations"[0m
+  Rendered instrument_registrations/index.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_topnavbar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 60ms (Views: 54.5ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/instrument_registrations/new" for 127.0.0.1 at 2018-09-11 15:46:23 -0300
+Processing by InstrumentRegistrationsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering instrument_registrations/new.html.erb within layouts/application
+  Rendered instrument_registrations/_header.html.erb (0.4ms)
+  Rendered instrument_registrations/_form.html.erb (8.2ms)
+  Rendered instrument_registrations/new.html.erb within layouts/application (10.1ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_topnavbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 85ms (Views: 59.9ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/instrument_registrations" for 127.0.0.1 at 2018-09-11 15:46:31 -0300
+Processing by InstrumentRegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RGfONLHK4OdbtIDa/X/5YAtLUzjPIKpSqgzkAEZzw6yV5tWuxd8oYiitqORHNuRePFoRrBd5sh4mxq4V6Q0Qjg==", "instrument_registration"=>{"instrument_number"=>"", "internal_number"=>"", "extra_number"=>"", "object_agreement"=>"", "granting_organ"=>"", "linked_organ"=>"", "existence_im"=>"", "instituition_name"=>"", "value_transfer"=>"200,30", "counterpart_value"=>"", "total"=>"", "signature_date(1i)"=>"2018", "signature_date(2i)"=>"9", "signature_date(3i)"=>"11", "end_date(1i)"=>"2018", "end_date(2i)"=>"9", "end_date(3i)"=>"11", "suspensive_date(1i)"=>"2018", "suspensive_date(2i)"=>"9", "suspensive_date(3i)"=>"11", "type"=>"", "address"=>"", "open_date(1i)"=>"2018", "open_date(2i)"=>"9", "open_date(3i)"=>"11", "organ"=>"", "user"=>"", "signature"=>""}, "commit"=>"Salvar"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mInstrumentRegistration Create (5.0ms)[0m  [1m[32mINSERT INTO "instrument_registrations" ("object_agreement", "granting_organ", "linked_organ", "existence_im", "instituition_name", "value_transfer", "counterpart_value", "total", "signature_date", "end_date", "suspensive_date", "type", "address", "open_date", "organ", "user", "signature", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19) RETURNING "id"[0m  [["object_agreement", ""], ["granting_organ", ""], ["linked_organ", ""], ["existence_im", ""], ["instituition_name", ""], ["value_transfer", "200,30"], ["counterpart_value", ""], ["total", ""], ["signature_date", "2018-09-11"], ["end_date", "2018-09-11"], ["suspensive_date", "2018-09-11"], ["type", ""], ["address", ""], ["open_date", "2018-09-11"], ["organ", ""], ["user", ""], ["signature", ""], ["created_at", "2018-09-11 18:46:31.487880"], ["updated_at", "2018-09-11 18:46:31.487880"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/instrument_registrations/1
+Completed 302 Found in 12ms (ActiveRecord: 6.6ms)
+
+
+Started GET "/instrument_registrations/1" for 127.0.0.1 at 2018-09-11 15:46:31 -0300
+Processing by InstrumentRegistrationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mInstrumentRegistration Load (0.3ms)[0m  [1m[34mSELECT  "instrument_registrations".* FROM "instrument_registrations" WHERE "instrument_registrations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering instrument_registrations/show.html.erb within layouts/application
+  Rendered instrument_registrations/_header.html.erb (0.4ms)
+  Rendered instrument_registrations/show.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_topnavbar.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 66ms (Views: 62.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/instrument_registrations" for 127.0.0.1 at 2018-09-11 15:46:34 -0300
+Processing by InstrumentRegistrationsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering instrument_registrations/index.html.erb within layouts/application
+  Rendered instrument_registrations/_header.html.erb (0.4ms)
+  [1m[36mInstrumentRegistration Load (0.5ms)[0m  [1m[34mSELECT "instrument_registrations".* FROM "instrument_registrations"[0m
+  Rendered instrument_registrations/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_topnavbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 55ms (Views: 52.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/instrument_registrations/new" for 127.0.0.1 at 2018-09-11 15:46:51 -0300
+Processing by InstrumentRegistrationsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering instrument_registrations/new.html.erb within layouts/application
+  Rendered instrument_registrations/_header.html.erb (0.6ms)
+  Rendered instrument_registrations/_form.html.erb (7.2ms)
+  Rendered instrument_registrations/new.html.erb within layouts/application (9.7ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_topnavbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 61ms (Views: 57.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/instrument_registrations/edit" for 127.0.0.1 at 2018-09-11 15:46:57 -0300
+Processing by InstrumentRegistrationsController#show as HTML
+  Parameters: {"id"=>"edit"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mInstrumentRegistration Load (0.3ms)[0m  [1m[34mSELECT  "instrument_registrations".* FROM "instrument_registrations" WHERE "instrument_registrations"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find InstrumentRegistration with 'id'=edit):
+  
+app/controllers/instrument_registrations_controller.rb:67:in `set_instrument_registration'
+Started GET "/home/index" for 127.0.0.1 at 2018-09-11 15:47:06 -0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 58ms (Views: 53.6ms | ActiveRecord: 0.8ms)
+
+

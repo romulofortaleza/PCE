@@ -1,0 +1,2 @@
+module InstrumentRegistrationsHelper
+end
