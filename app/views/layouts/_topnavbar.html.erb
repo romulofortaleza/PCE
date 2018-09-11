@@ -8,11 +8,11 @@
           </div>
           <ul class="nav navbar-top-links" style="text-align: center;">
         <li>
-          <%= link_to('Processo Convênio Eletrônico - PCE', home_index_path, :style => "color: #ffff; font-size: 18px; margin: -5px; margin-left: 50px; margin-top: 2px; font-family: Poppins-Medium;" )%>
+          <h1 style = color:white; font-family: 'Ubuntu', sans-serif;> Processo Convênio Eletrônico - PCE</h1>
         </li>
         <li class="pull-right" >
           <% if user_signed_in? %>
-              <%= link_to fa_icon("sign-out", text:"SAIR"), destroy_user_session_path, method: :delete, :class => "", :style => "color: #ffff; margin-top: 4px;" %></li>
+              <%= link_to fa_icon("sign-out", text:"Sair"), destroy_user_session_path, method: :delete, :class => "", :style => "color: #ffff; margin-top: 4px;" %></li>
           <% end %>
             </li>
         </ul>

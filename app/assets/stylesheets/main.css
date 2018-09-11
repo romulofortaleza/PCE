@@ -72,11 +72,12 @@
       margin: 0px;
   }
   
-  p:hover {
+  /* p:hover {
     text-decoration: none;
     color: #green;
   }
-  
+   */
+   
   ul, li {
       margin: 0px;
       list-style-type: none;
