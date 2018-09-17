@@ -17,6 +17,10 @@
 //= require metisMenu/jquery.metisMenu.js
 //= require pace/pace.min.js
 //= require slimscroll/jquery.slimscroll.min.js
+//= require dataTables/datatables.min.js
+//= require pdfjs/pdf.js
+//= require pdfjs/pdf.worker.js
+//= require notifyjs
 //= require bootstrap/bootstrap.min.js
 //= require bootstrap/popper.min.js
 //= require bootstrap/popover.js
