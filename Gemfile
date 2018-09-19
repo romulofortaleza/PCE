@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gem 'rails'
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
+gem 'rails-assets-notifyjs', source: 'https://rails-assets.org'
 
 # Pesquisas dentro do Postgresql
 gem 'pg_search'
