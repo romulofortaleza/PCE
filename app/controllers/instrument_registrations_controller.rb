@@ -69,6 +69,6 @@ class InstrumentRegistrationsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def instrument_registration_params
-      params.require(:instrument_registration).permit(:instrument_number, :internal_number, :extra_number, :object_agreement, :granting_organ, :linked_organ, :existence_im, :instituition_name, :value_transfer, :counterpart_value, :total, :signature_date, :end_date, :suspensive_date, :type, :address, :open_date, :organ, :user, :signature)
+      params.require(:instrument_registration).permit(:instrument_number, :internal_number, :extra_number, :object_agreement, :granting_organ, :linked_organ, :existence_im, :instituition_name, :value_transfer, :counterpart_value, :total, :signature_date, :end_date, :suspensive_date, :type, :address, :open_date, :organ, :user, :signature, :instrument_type)
     end
 end

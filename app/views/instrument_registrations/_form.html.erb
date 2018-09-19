@@ -61,7 +61,8 @@
       <div class="form-group <%= instrument_registration.errors[:existence_im].any? ? 'has-error' : '' %>">
       <label class="col-sm-2 control-label">Há Existência de IM?</label>
       <div class="col-sm-10">
-        <%= form.text_field :existence_im, class: 'form-control' %>
+        <%= select_tag 'instrument_registration[existence_im]', options_for_select(existence_im, 'Selecione'), class: 'form-control', selected: 'existence_im' %>
+        <%#= form.text_field :existence_im, class: 'form-control' %>
         <% if instrument_registration.errors[:existence_im].any? %>
           <span class="help-block m-b-none font-bold"><%= instrument_registration.errors[:existence_im].first %></span>
         <% end %>
@@ -139,12 +140,14 @@
     <br>
     <h3>V. Especificações </h3>    
     <br>
-      <div class="form-group <%= instrument_registration.errors[:type].any? ? 'has-error' : '' %>">
+      <div class="form-group <%= instrument_registration.errors[:instrument_type].any? ? 'has-error' : '' %>">
       <label class="col-sm-2 control-label">Tipo:</label>
       <div class="col-sm-10">
-        <%= form.text_field :type, class: 'form-control' %>
-        <% if instrument_registration.errors[:type].any? %>
-          <span class="help-block m-b-none font-bold"><%= instrument_registration.errors[:type].first %></span>
+      <%= select_tag 'instrument_registration[instrument_type]', options_for_select(instrument_tp, 'Obra'), class: 'form-control', selected: 'instrument_type' %>
+      <%#= select_tag 'instrument_registration[:instrument_type]', options_for_select(['Sim', 'Não'] class: 'form-control'. selected: :instrument_type) %>
+        <%#= form.text_field :type, class: 'form-control' %>
+        <% if instrument_registration.errors[:instrument_type].any? %>
+          <span class="help-block m-b-none font-bold"><%= instrument_registration.errors[:instrument_type].first %></span>
         <% end %>
       </div>
     </div>    
