@@ -10,10 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_19_120635) do
+ActiveRecord::Schema.define(version: 2018_09_21_124452) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "document_registers", force: :cascade do |t|
+    t.string "name"
+    t.bigint "instrument_registrations_id"
+    t.binary "document_file"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["instrument_registrations_id"], name: "index_document_registers_on_instrument_registrations_id"
+  end
 
   create_table "instrument_registrations", force: :cascade do |t|
     t.integer "instrument_number"
@@ -54,4 +63,5 @@ ActiveRecord::Schema.define(version: 2018_09_19_120635) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "document_registers", "instrument_registrations", column: "instrument_registrations_id"
 end
