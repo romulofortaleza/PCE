@@ -1,4 +1,5 @@
 Myapp::Application.routes.draw do
+  resources :document_registers
   resources :instrument_registrations
   resources :testings
   devise_for :users, :controllers => {registrations: "registrations"}
