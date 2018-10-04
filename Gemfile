@@ -11,9 +11,6 @@ gem 'pg_search'
 # Login
 gem 'devise'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
-
 gem 'popper_js'
 
 # Use SCSS for stylesheets
